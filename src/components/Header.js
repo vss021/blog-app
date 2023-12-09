@@ -31,7 +31,7 @@ function Header() {
           variant="h4"
           style={{ textDecoration: "none" }}
         >
-          My Blog
+          BlogVibesHub
         </Typography>
         {isLoggedIn && (
           <Box display="flex" marginLeft={"auto"}>
