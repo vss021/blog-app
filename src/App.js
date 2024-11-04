@@ -10,10 +10,15 @@ import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "./store";
 
+
 function App() {
+  
   const dispatch = useDispatch();
+  
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
+  
   useEffect(() => {
+    
     if (localStorage.getItem("userId")) {
       dispatch(authActions.signin());
     }
